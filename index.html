@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Jayson Turner</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="title"><h1 style="margin-bottom: 0;">Jayson Turner</h1><h3 style="margin-left: 0px; margin-top: 2.5px; color:rgb(255 78 176)">Real-time Computer Graphics Portfolio</h3></div>
+		<div class="item">
+			<video src="assets/crow-lo.mp4" autoplay muted loop></video>
+			<h3 class="video-title">Video Title</h3>
+			<div class="description">
+				<p>This video has the following This video has the following This video has the following This video has the following This video has the following This video has the following </p>
+				<ul>
+					<li>Something</li>
+					<li>Something</li>
+					<li>Something</li>
+				</ul>
+				<a href="https://google.com" target="_blank">Link</a>
+
+			</div>
+		</div>
+		<div class="item">
+			<video src="assets/crow-lo.mp4" autoplay muted loop></video>
+			<h3 class="video-title">Video Title</h3>
+			<div class="description">
+				<p>This video has the following</p>
+				<ul>
+					<li>Something</li>
+					<li>Something</li>
+					<li>Something</li>
+				</ul>
+				<a href="https://google.com" target="_blank">Link</a>
+
+			</div>
+		</div>
+		<div class="item">
+			<video src="assets/crow-lo.mp4" autoplay muted loop></video>
+			<h3 class="video-title">Video Title</h3>
+			<div class="description">
+				<p>This video has the following</p>
+				<ul>
+					<li>Something</li>
+					<li>Something</li>
+					<li>Something</li>
+				</ul>
+				<a href="https://google.com" target="_blank">Link</a>
+
+			</div>
+		</div>
+		<div class="item">
+			<video src="assets/crow-lo.mp4" autoplay muted loop></video>
+			<h3 class="video-title">Video Title</h3>
+			<div class="description">
+				<p>This video has the following</p>
+				<ul>
+					<li>Something</li>
+					<li>Something</li>
+					<li>Something</li>
+				</ul>
+				<a href="https://google.com" target="_blank">Link</a>
+
+			</div>
+		</div>
+		<div class="item">
+			<video src="assets/crow-lo.mp4" autoplay muted loop></video>
+			<h3 class="video-title">Video Title</h3>
+			<div class="description">
+				<p>This video has the following</p>
+				<ul>
+					<li>Something</li>
+					<li>Something</li>
+					<li>Something</li>
+				</ul>
+				<a href="https://google.com" target="_blank">Link</a>
+
+			</div>
+		</div>
+	</div>
+	<script>
+		const videos = document.querySelectorAll('video');
+		const options = {
+			threshold: 0.1
+		};
+
+		let observer = new IntersectionObserver(entries => {
+			entries.forEach(entry => {
+				if (entry.intersectionRatio > 0) {
+					entry.tasrc = entry.target.datsrc;
+					observer.unobserve(entry.target);
+				}
+			});
+		}, options);
+
+		videos.forEach(video => {
+			observer.observe(video);
+		});
+	</script>
+</body>
+
+</html>

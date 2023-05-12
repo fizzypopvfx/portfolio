@@ -1,0 +1,71 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Alata', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #090909;/*#004b32*/;
+	color: #EEE;
+}
+
+.container {
+	max-width: 767px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	background-color: #121212;
+}
+
+@media (max-width: 767px) {
+	.container {
+		max-width: 100%;
+	}
+
+	
+	.description {
+		font-size: 16px;
+		margin-top: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+.item {
+	margin-bottom: 50px;
+}
+
+video {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.description {
+	font-size: 16px;
+	margin-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.title {
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.video-title {
+	
+	margin-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+a {
+	color: #EEE;
+}
