@@ -92,6 +92,10 @@ video {
 	text-align: right;
 }
 
+.nav-link {
+	margin-left: 20px;
+}
+
 a {
 	color: var(--link);
 	font-weight: 300;
