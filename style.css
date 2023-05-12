@@ -89,6 +89,49 @@ video {
 	padding-right: 20px;
 }
 
+.navigation {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+	font-family: 'Epilogue', sans-serif;
+	font-weight: 200;
+	font-size: 18px;
+	text-align: right;
+}
+
 a {
 	color: var(--link);
+	font-weight: 200;
+}
+
+
+.cv-title {
+	font-family: 'Epilogue', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	font-style: italic;
+	padding-top: 10px;
+	margin-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.cv-subtitle {
+	font-family: 'Epilogue', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	padding-top: 10px;
+	margin-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.cv-date {
+	font-family: 'Epilogue', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 20px;
 }
