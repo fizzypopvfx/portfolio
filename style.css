@@ -1,25 +1,27 @@
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: 'Alata', sans-serif;
+:root {
+	--bg: #090909;
+	--bg-alt: #121212;
+	--title: #EEE;
+	--subtitle: #EEE;
+	--text: #EEE;
+	--link: #EEE;
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #090909;/*#004b32*/;
-	color: #EEE;
+	background-color: var(--bg);
+	color: var(--text);
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 200;
+	font-size: 14px;
 }
 
 .container {
 	max-width: 767px;
 	margin: 0 auto;
 	padding-bottom: 50px;
-	background-color: #121212;
+	background-color: var(--bg-alt);
 }
 
 @media (max-width: 767px) {
@@ -29,7 +31,6 @@ body {
 
 	
 	.description {
-		font-size: 16px;
 		margin-top: 10px;
 		padding-left: 20px;
 		padding-right: 20px;
@@ -47,25 +48,47 @@ video {
 }
 
 .description {
-	font-size: 16px;
 	margin-top: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
-.title {
+.title-container {
 	padding-top: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
+.title {
+	color: var(--title);
+	font-family: 'Epilogue', sans-serif;
+	font-weight: 200;
+	font-size: 60px;
+	margin-bottom: 0;
+}
+
+.subtitle {
+	font-family: 'Lato', sans-serif;
+	font-weight: 800;
+	font-style: italic;
+	font-size: 20px;
+	color: var(--subtitle);
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-bottom: 20px;
+}
+
 .video-title {
-	
+	font-family: 'Epilogue', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	font-style: italic;
+	padding-top: 10px;
 	margin-bottom: 0px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
 a {
-	color: #EEE;
+	color: var(--link);
 }
