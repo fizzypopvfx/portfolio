@@ -157,3 +157,7 @@ a {
 	display: flex;
 	margin-top: 30px;
 }
+
+li {
+	padding-bottom: 7.5px;
+}
