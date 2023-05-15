@@ -46,11 +46,22 @@
 			<video src="assets/crow/crow-rain.mp4" playsinline autoplay muted loop preload="none"></video>
 			<h2 class="video-title">Rain &amp; Puddle Shaders</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
 				<ul>
-					<li>Something</li>
+					<li>Particles cause vertex displacement on a plane at the location of impact.</li>
+					<li>Rain drops are managed by a compute shader using simplex noise to generate start locations on a
+						plane above the water surface.</li>
+					<li>Drops are animated using a gravity force which nicely allows for directional rain. Drops are
+						looped as they intersect with the ground. Intersection locations are output to a separate
+						texture of 'puddle points'.</li>
+					<li>Puddle points are used to instance circles viewed above with an orthogonal camera and output to
+						a new render target.</li>
+					<li>A heightmap is drawn using video feedback, edge detection, and Catmull-Rom blurring to create
+						rippling effects from the rendered circles.</li>
+					<li>A modified PBR material shader displaces the water surface using the heightmap.</li>
+					<li>Normal, environment, metallic, and roughness maps are applied to complete the water-like look.
+					</li>
 				</ul>
+
 			</div>
 		</div>
 		<div class="item">
