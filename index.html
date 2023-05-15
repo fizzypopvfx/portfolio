@@ -35,7 +35,7 @@
 			<h2 class="video-title">Portfolio</h2>
 			<div class="description">
 				<p>Best viewed on desktop, allow videos to load 🧡</p>
-				<p>Scroll for a technical breakdown of the these works and more 👇</p>
+				<p>Scroll for a technical breakdown of the these works (built in TouchDesigner/Blender) and more 👇</p>
 				📺 <a href="https://www.youtube.com/watch?v=x7NisNBdG9g" target="_blank">Crow -- Hailey Beavis</a>
 				(Funded by Creative Scotland)<br>
 				📺 <a href="https://www.youtube.com/watch?v=h7L5x-u9euM" target="_blank">Lucky Night -- bis</a><br>
@@ -48,7 +48,8 @@
 			<div class="description">
 				<ul>
 					<li>Particles cause vertex displacement on a plane at the location of impact.</li>
-					<li>Rain drops are managed by a compute shader using simplex noise to generate start locations on a
+					<li>Rain drops are managed by a GLSL compute shader using simplex noise to generate start locations
+						on a
 						plane above the water surface.</li>
 					<li>Drops are animated using a gravity force which nicely allows for directional rain. Drops are
 						looped as they intersect with the ground. Intersection locations are output to a separate
@@ -68,10 +69,14 @@
 			<video src="assets/crow/crow-fish.mp4" playsinline autoplay muted loop preload="none"></video>
 			<h2 class="video-title">Underwater Animated Envrionment</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
+				<p>A green-screened performer mimics playful interaction in an underwater world.</p>
 				<ul>
-					<li>Something</li>
+					<li>Fish are modelled in Blender, their tails animate using a vertex shader and a combination of
+						high and low frequency sine waves to approximate swimming motions.</li>
+					<li>Plants are alembics with pulsing vertex animation to add more life and character. Bubbles are
+						mesh-instanced particle systems with upward force and turbulence.</li>
+					<li>Post effects include colour grading, uv displacement, GLSL god rays, and projected noise
+						textures that simulate caustics.</li>
 				</ul>
 			</div>
 		</div>
@@ -79,33 +84,39 @@
 			<video src="assets/crow/crow-wavetrees.mp4" playsinline autoplay muted loop preload="none"></video>
 			<h2 class="video-title">Audio-Reactive Wave Trees</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
 				<ul>
-					<li>Something</li>
+					<li>
+						Three audio stems (guitar, bass, drums) are visualised as colourful audio-reactive trees in a
+						forest.
+					</li>
+					<li>
+						Audio data is resampled to 30hz. Amplitude is used for positioning in one dimension to instance
+						small hexagonal geometry. A wave is multiplied along the sampling window to scale down amplitude
+						at each end of the tree.
+					</li>
+					<li>
+						Screen-space reflections are used on the ground plane to add depth and polish to the scene.
+					</li>
 				</ul>
+
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/crow/crow-dolphins2.mp4" playsinline autoplay muted loop preload="none"></video>
 			<h2 class="video-title">Dolphin Swim Animation Shader &amp; Boids Simulation</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
+				<p>A cheap and easy dolphin swimming animation. A sine wave is applied along the length (z-axis) of the
+					mesh driven by time to move vertices. Fins are animated by scaling a rotation by the vertex x-axis
+					values. This moves the tips of the fins most and the body the least. Animation is offset by instance
+					ID. Built on a GPU Boids simulation by <a href="https://dirt.design/portfolio/touchdesigner-boids/
+					" target="_blank">David Braun</a>.</p>
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/crow/crow-pink.mp4" playsinline autoplay muted loop preload="none"></video>
 			<h2 class="video-title">Alien Garden Envrionment</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
+
 			</div>
 		</div>
 		<div class="item">
