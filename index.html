@@ -34,7 +34,7 @@
 		<div class="item">
 			<h2 class="video-title">Portfolio</h2>
 			<div class="description">
-				<p>Best viewed on desktop, allow videos to load 🧡</p>
+				<p>Best viewed on desktop. Please allow videos to load 🧡</p>
 				<p>Scroll for a technical breakdown of the these works (built in TouchDesigner/Blender) and more 👇</p>
 				📺 <a href="https://www.youtube.com/watch?v=x7NisNBdG9g" target="_blank">Crow -- Hailey Beavis</a>
 				(Funded by Creative Scotland)<br>
@@ -116,195 +116,125 @@
 			<video src="assets/crow/crow-pink.mp4" playsinline autoplay muted loop preload="none"></video>
 			<h2 class="video-title">Alien Garden Envrionment</h2>
 			<div class="description">
-
+				<ul>
+					<li>The ground transitions from a flat black plane to pink rolling hills using animated heightmaps, creating fluid transitions between different worlds.</li>
+					<li>Grass geometry is instanced then animated with a simple bend. The amount of rotation applied to a vertex is dependent on its height. Similar animations are applied to the other plants.</li>
+					<li>An alembic tree grows along a curve. The underside of its geometry is sprinkled with positions to instance flat shaded fruit, blowing in the wind using generative rotation.</li>
+					<li>Motes of dust float about the scene. These are instanced low-poly spheres drawn to a render target, blurred, then composite over the scene.</li>
+				</ul>
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/crow/crow-jelly.mp4" playsinline autoplay muted loop preload="none"></video>
 			<h2 class="video-title">Jellyfish Vertex Groups</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
+				<p>Procedurally modelled jellyfish. A sphere mesh is trimmed to 75&percnt; size. Six cylinders are shaped into cones. Vertex attributes are added to the separate pieces to later identify them in the vertex shader. The shader then applies pulse and wiggle animations to specific pieces at varying frequencies to create a dynamic smack of jellyfish.</p>
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/crow/crow-particles.mp4" playsinline autoplay muted loop preload="none"></video>
 			<h2 class="video-title">Particles, Forces, and Audio-Reactivity</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
+				<p>A particle system is influenced by a rotating force around the performer to create an upward swirling effect. Particles scale based on the power of the drum sounds. This adds a connection between the remaining sounds and elements as the performance draws to a close.
+				</p>
+				<p>Volumetric fog and light rays are added as post effects to give depth to the scene. Swirling green clouds are composite with post effects to simulate mild aurora and colour the glow around the sun.</p>
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/crow/crow-space.mp4" playsinline autoplay muted loop preload="none"></video>
 			<h2 class="video-title">Generative Paths</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
+				<p>The birds and camera in this scene follow the same path however, they are randomly offset from each other using generative noise. The travel speed of the camera and birds are also randomly adjusted over to give the impression of a more 'human' camera operator, simulating a behaviour commonly seen in this type of footage.</p>
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/crow/crow-textinst.mp4" playsinline autoplay muted loop preload="none"></video>
 			<h2 class="video-title">Video Caching &amp; Texture Instancing</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
+				<p>Video frames are streamed into a 3D texture, each layer within the texture is then instanced closely in a line to create a visually interesting 3D twist on video feedback that many are familiar with.</p>
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/crow/crow-tracking.mp4" playsinline autoplay muted loop preload="none"></video>
 			<h2 class="video-title">Foot Tracking &amp; Depth Correction</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
+				<p>To apply 2D chroma-keyed footage to a 3D world convincingly, the performer's feet had to be detected and effectively clamped to the ground plane. The performer would otherwise float above the ground when stepping backwards.</p>
+				<p>This is achieved by first detecting the lowest non-transparent pixel in the feed. The performer is rendered to a rectangle in a separate scene. By shooting a ray at the UV of the lowest point, the closest intersection along the ray to the ground in front or behind the performer can be found. Moving the performer to this location (with some scaling) creates a convincing effect of grounding the character in the final scene.
+				</p>
+				<p>Thanks to <a href="https://www.twitch.tv/dandidoesit" target="_blank">Matija Erceg</a> for his expert knowledge on this 💜</p>
+
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/bis/bis-chorus.mp4" playsinline autoplay muted loop preload="none"></video>
-			<h2 class="video-title">Metaball Dancers</h2>
+			<h2 class="video-title">Character Creation &amp; Animation Workflow</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/bis/bis-slomo.mp4" playsinline autoplay muted loop preload="none"></video>
-			<h2 class="video-title">Metaball Dancers</h2>
+			<h2 class="video-title">Skinned Animation Textures</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/bis/bis-fight.mp4" playsinline autoplay muted loop preload="none"></video>
-			<h2 class="video-title">Metaball Dancers</h2>
+			<h2 class="video-title">Camera Effects</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/bis/bis-feedback.mp4" playsinline autoplay muted loop preload="none"></video>
-			<h2 class="video-title">Metaball Dancers</h2>
+			<h2 class="video-title">Instancing &amp; Video Feedback</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/bis/bis-dancefloor.mp4" playsinline autoplay muted loop preload="none"></video>
-			<h2 class="video-title">Metaball Dancers</h2>
+			<h2 class="video-title">Procedural Dancefloor &amp; Lights</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/bis/bis-club.mp4" playsinline autoplay muted loop preload="none"></video>
-			<h2 class="video-title">Metaball Dancers</h2>
+			<h2 class="video-title">90s Club Environment</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
 			</div>
 		</div>
-
 		<div class="item">
 			<video src="assets/twitch/twitch-kinect.mp4" playsinline autoplay muted loop preload="none"></video>
-			<h2 class="video-title">Metaball Dancers</h2>
+			<h2 class="video-title">Kinect Point Cloud Streaming</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/twitch/twitch-dancers.mp4" playsinline autoplay muted loop preload="none"></video>
 			<h2 class="video-title">Metaball Dancers</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/twitch/twitch-dancehall.mp4" playsinline autoplay muted loop preload="none"></video>
-			<h2 class="video-title">Metaball Dancers</h2>
+			<h2 class="video-title">Twitch Chat Controlled Characters</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/twitch/twitch-squats.mp4" playsinline autoplay muted loop preload="none"></video>
-			<h2 class="video-title">Metaball Dancers</h2>
+			<h2 class="video-title">Squat Counting via Skeletal Tracking</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/twitch/twitch-cliff.mp4" playsinline autoplay muted loop preload="none"></video>
-			<h2 class="video-title">Metaball Dancers</h2>
+			<h2 class="video-title">Physics &amp; Performance</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/twitch/twitch-whales.mp4" playsinline autoplay muted loop preload="none"></video>
-			<h2 class="video-title">Metaball Dancers</h2>
+			<h2 class="video-title">Whale Rain</h2>
 			<div class="description">
-				<p>This video has the following This video has the following This video has the following This video has
-					the following This video has the following This video has the following </p>
-				<ul>
-					<li>Something</li>
-				</ul>
 			</div>
 		</div>
 
