@@ -49,8 +49,7 @@
 				<ul>
 					<li>Particles cause vertex displacement on a plane at the location of impact.</li>
 					<li>Rain drops are managed by a GLSL compute shader using simplex noise to generate start locations
-						on a
-						plane above the water surface.</li>
+						on a plane above the water surface.</li>
 					<li>Drops are animated using a gravity force which nicely allows for directional rain. Drops are
 						loop preload="none" autoplayed as they intersect with the ground. Intersection locations are output to a separate
 						texture of 'puddle points'.</li>
@@ -59,8 +58,6 @@
 					<li>A heightmap is drawn using video feedback, edge detection, and Catmull-Rom blurring to create
 						rippling effects from the rendered circles.</li>
 					<li>A modified PBR material shader displaces the water surface using the heightmap.</li>
-					<li>Normal, environment, metallic, and roughness maps are applied to complete the water-like look.
-					</li>
 				</ul>
 
 			</div>
@@ -212,12 +209,14 @@
 			<video src="assets/twitch/twitch-kinect.mp4" playsinline  muted loop preload="none" autoplay ></video>
 			<h2 class="video-title">Kinect Point Cloud Streaming</h2>
 			<div class="description">
+				<p>A live broadcast show on Twitch where I was present in a 3D world by means of Kinect v2 (later Azure Kinect). The point cloud was aligned with the environment and trimmed using a combination of the Kinect's built in player masks and GLSL masking. Volumetric presence on Twitch still seems to be novel years later.</p>
 			</div>
 		</div>
 		<div class="item">
 			<video src="assets/twitch/twitch-dancers.mp4" playsinline  muted loop preload="none" autoplay ></video>
 			<h2 class="video-title">Metaball Dancers</h2>
 			<div class="description">
+				<p>Using the Kinect's skeletal tracking I was able to build a simple line mesh and place metaballs of varying size along it. This provided real-time abstract characters that would follow my movement.</p>
 			</div>
 		</div>
 		<div class="item">
